@@ -1,0 +1,31 @@
+Available for analysis if interested.
+
+head_x --> Head centroid of x-coordinates (Nose, REye, LEye).
+head_y --> Head centroid of y-coordinates (Nose, REye, LEye).
+head_ed_pos --> Euclidean norm of the head centroid position vector.
+head_ed_vel --> Frame-to-frame Euclidean distance of centroid position (i.e., head speed).
+head_ed_acc --> Frame-to-frame change in head velocity (i.e., head acceleration).
+
+head_rel_x --> Head centroid of x-coordinates  relative to the neck. (i.e., keypoints centered around Neck-x).
+head_rel_y -->  Head centroid of y-coordinates relative to the neck. (i.e., keypoints centered around Neck-y).
+headRel_ed_pos --> Same as head_ed_pos but relative to neck.
+headRel_ed_vel --> Same as head_ed_vel but relative to neck.
+headRel_ed_acc --> Same as head_ed_acc but relative to neck.
+
+body_x --> Upper Body centroid of x-coordinates (Nose, Neck, RShoulder, LShoulder)
+body_y --> Upper Body centroid of y-coordinates (Nose, Neck, RShoulder, LShoulder)
+bodyUpper_ed_pos --> Euclidean norm of the upper body centroid position vector.
+bodyUpper_ed_vel --> Frame-to-frame Euclidean distance of centroid position (i.e., upper body speed).
+bodyUpper_ed_acc --> Frame-to-frame change in upper body velocity (i.e., upper body acceleration).
+        
+total_movement_ts --> Sum of frame-to-frame Euclidean displacements of all selected keypoints (Nose, Neck, Shoulders, Eyes). 
+                    Captures overall body movement magnitude.
+head_total_movement_ts --> Sum of frame-to-frame Euclidean displacements of head keypoints (Nose, REye, LEye) relative to Neck. 
+                    Captures overall relative head movement magniteude.
+body_total_movement_ts --> Sum of frame-to-frame Euclidean displacements of body keypoints (Neck, RShoulder, LShoulder) relative to Nose. 
+                    Captures upper-body movement magnitude.
+
+head_movement_norm --> Euclidean norm of summed velocity vectors of head keypoints (Nose, REye, LEye) relative to Neck (i.e., Net head movement magnitude). 
+body_movement_norm --> Euclidean norm of summed velocity vectors of body keypoints (Nose, Neck, Shoulders) (i.e., Net body movement magnitude)
+full_body_movement_norm --> Euclidean norm of summed velocity vectors of all keypoints (Nose, Neck, Shoulders, Eyes) (i.e., Net overall body movement magnitude)
+
