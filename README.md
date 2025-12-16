@@ -33,6 +33,7 @@ Note: Step 1 requires the raw OpenPose data to execute. Additionally, CRQA data 
 - Step 1: Process the raw time series data. (Preprocess_openpose_files.ipynb)
 - Step 2: Conduct an average mutual analysis and false nearest neighbours analysis on the processed time series. (ami_fnn.ipynb)
 - Step 3: Conduct Cross Recurrence Quantification Analysis (CRQA) on the actual pairings. (crqa.ipynb)
+    - To plot CRQA outcomes, see the utils_dir/graph_crqa_utils.py 
 - Step 3.1: Generate IAAFT time series and perform CRQA. (pseudo_iaaft_crqa.ipynb)
 - Step 3.2: Perform CRQA on participants who did not interact. (pseudo_pairs_crqa.ipynb)
 - Step 4: Merge actual and baseline outcomes into a single csv (merge_pseudo_actual.ipynb)

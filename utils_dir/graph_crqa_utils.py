@@ -85,6 +85,9 @@ def batch_plot_rqa_params(
     collapse_windows=False,
     dv_label=None
 ):
+    """
+    This function is used to plot the crqa outcomes across various parameter settings. 
+    """
     combos = [(e, d, r) for e in embeddings for d in delays for r in radii]
     n = len(combos)
 
